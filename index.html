@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideas Amplified — Turning Great Ideas Into Real Impact</title>
+<meta name="description" content="Ideas Amplified is a community helping Gen Z innovators in Kenya transform raw ideas into startups, businesses, and projects that move the country forward.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Progress spark that rides along the page as you scroll -->
+<div class="scroll-spark" id="scrollSpark"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><img src="images/logo_new-removebg-preview.png" alt="Ideas Amplified"></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#sectors">Sectors</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#join" class="btn btn-primary nav-cta">Join Us</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <img src="images/business.jpeg" alt="" class="hero-photo" aria-hidden="true">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">A COMMUNITY FOR GEN Z BUILDERS IN KENYA</p>
+      <h1 class="reveal">Turning Great Ideas Into <span class="text-gradient">Real Impact.</span></h1>
+      <p class="hero-sub reveal">Ideas Amplified is a community helping Gen Z innovators transform raw ideas into startups, businesses, and projects that move Kenya forward.</p>
+      <div class="hero-actions reveal">
+        <a href="#join" class="btn btn-primary">Join the Movement</a>
+        <a href="#about" class="btn btn-ghost">Learn More <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section" id="about">
+    <div class="container problem-grid">
+      <div class="reveal">
+        <p class="eyebrow">THE GAP</p>
+        <h2>Brilliant Ideas Are Dying Every Day</h2>
+        <p class="lead">Many young innovators have incredible ideas but never get the chance to build them because they lack:</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-circle-xmark"></i> An audience to test ideas with</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Funding to get started</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Mentorship from people who've done it</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> Investors who believe in the vision</li>
+          <li><i class="fa-solid fa-circle-xmark"></i> A community pushing them forward</li>
+        </ul>
+      </div>
+      <div class="problem-visual reveal" aria-hidden="true">
+        <div class="pv-stage pv-broken">
+          <i class="fa-regular fa-lightbulb"></i>
+        </div>
+        <div class="pv-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+        <div class="pv-stage pv-fixed">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION ============ -->
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">THE ANSWER</p>
+        <h2>Introducing Ideas Amplified</h2>
+        <p class="lead">We give ideas a place to be shared, sharpened, and shipped — with people who care about seeing them through.</p>
+      </div>
+      <div class="card-row three">
+        <div class="feature-card reveal">
+          <div class="fc-icon">💡</div>
+          <h3>Brainstorm</h3>
+          <p>Share raw ideas without fear of judgment. Every big thing started as a rough one.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="fc-icon">🛠</div>
+          <h3>Refine</h3>
+          <p>Improve ideas through collaboration, feedback, and strategic planning with the community.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="fc-icon">🚀</div>
+          <h3>Implement</h3>
+          <p>Connect ideas with the resources, funding, and audiences needed to bring them to life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS TIMELINE ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Our Process</h2>
+        <p class="lead">From a spark of an idea to a real launch — a clear path, not a maze.</p>
+      </div>
+
+      <div class="tech-bar reveal">
+        <span><span class="tb-dot"></span>PROCESS.FLOW</span>
+        <span>7 STEPS</span>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-line"><div class="timeline-spark" id="timelineSpark"></div></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Idea</h4><p>You bring the spark.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Brainstorm</h4><p>We help you shape it.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Community Feedback</h4><p>Real people, real input.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Refinement</h4><p>Sharpen the plan.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Execution Plan</h4><p>Turn strategy into steps.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Funding</h4><p>Connect to resources.</p></div>
+        <div class="timeline-step reveal"><div class="ts-dot"></div><h4>Launch</h4><p>Go live, for real.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS SECTORS ============ -->
+  <section class="section section-tint" id="sectors">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">WHO WE BUILD WITH</p>
+        <h2>Focus Sectors</h2>
+      </div>
+      <div class="tech-bar reveal">
+        <span><span class="tb-dot"></span>SECTORS.INDEX</span>
+        <span>08 TOTAL</span>
+      </div>
+      <div class="sector-grid">
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/agriculture.jpeg" alt="Agriculture">
+          <div class="sector-content"><span class="sc-index">01</span><h4>Agriculture</h4><p>Farming for a growing nation.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/business.jpeg" alt="Business">
+          <div class="sector-content"><span class="sc-index">02</span><h4>Business</h4><p>Ventures with a real model.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/creative_art.jpeg" alt="Creative Arts">
+          <div class="sector-content"><span class="sc-index">03</span><h4>Creative Arts</h4><p>Design, film & storytelling.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/sports.jpeg" alt="Sports">
+          <div class="sector-content"><span class="sc-index">04</span><h4>Sports</h4><p>Talent, teams & wellness.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/music.jpeg" alt="Music">
+          <div class="sector-content"><span class="sc-index">05</span><h4>Music</h4><p>Sound that moves culture.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/leadership.jpeg" alt="Leadership">
+          <div class="sector-content"><span class="sc-index">06</span><h4>Leadership</h4><p>People-first initiatives.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/sustainability.jpeg" alt="Sustainability">
+          <div class="sector-content"><span class="sc-index">07</span><h4>Sustainability</h4><p>Ideas built for the long run.</p></div>
+        </a>
+        <a href="#contact" class="sector-card reveal">
+          <img src="images/business.jpeg" alt="Technology">
+          <div class="sector-content"><span class="sc-index">08</span><h4>Technology</h4><p>Apps, platforms & digital tools.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY JOIN ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">THE BENEFITS</p>
+        <h2>Why Join Ideas Amplified?</h2>
+      </div>
+      <div class="card-row four">
+        <div class="why-card reveal"><i class="fa-solid fa-people-group"></i><h4>Build your network</h4><p>Meet founders, mentors and peers on the same path.</p></div>
+        <div class="why-card reveal"><i class="fa-solid fa-book-open"></i><h4>Learn from others</h4><p>Real lessons from people who've already tried.</p></div>
+        <div class="why-card reveal"><i class="fa-solid fa-flask"></i><h4>Validate your ideas</h4><p>Test concepts with an honest, engaged community.</p></div>
+        <div class="why-card reveal"><i class="fa-solid fa-coins"></i><h4>Access future funding</h4><p>Get in position for opportunities as they open up.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATISTICS ============ -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="tech-bar reveal" style="border-color:#2A2A2A; color:#7A7A75;">
+        <span><span class="tb-dot"></span>MEASURE.GOALS</span>
+        <span>LIVE TARGETS</span>
+      </div>
+      <div class="stats-grid">
+        <div class="stat reveal"><span class="stat-num" data-target="1000">0</span><span class="stat-plus">+</span><p>Young Innovators</p></div>
+        <div class="stat reveal"><span class="stat-num" data-target="100">0</span><span class="stat-plus">+</span><p>Ideas Developed</p></div>
+        <div class="stat reveal"><span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span><p>Projects Launched</p></div>
+        <div class="stat reveal"><span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span><p>Industry Sectors</p></div>
+      </div>
+      <p class="stats-note reveal">Goals we're building toward — updated as our community grows.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOUNDER ============ -->
+  <section class="section" id="founder">
+    <div class="container founder-grid">
+      <div class="founder-photo reveal">
+        <img src="images/leadership.jpeg" alt="Founder — Markeli">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">MEET THE FOUNDER</p>
+        <h2>Why This Exists</h2>
+        <p class="lead">Ideas Amplified began with a simple frustration: watching talented young people let great ideas die for lack of a place to grow them. This community exists to close that gap — one idea at a time.</p>
+        <blockquote>"Let's stop waiting for opportunities and start creating them."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMUNITY VISION ============ -->
+  <section class="section section-dark" id="community">
+    <div class="container community-content">
+      <p class="eyebrow eyebrow-light reveal">MORE THAN A BUSINESS</p>
+      <h2 class="reveal">Together We Can Build Kenya's Next Generation of Innovators</h2>
+      <p class="lead lead-light reveal">This isn't just about launching startups. It's about collaboration, innovation, community, and impact — built by young people, for young people.</p>
+      <div class="pillars reveal">
+        <div class="pillar"><i class="fa-solid fa-handshake"></i><span>Collaboration</span></div>
+        <div class="pillar"><i class="fa-solid fa-lightbulb"></i><span>Innovation</span></div>
+        <div class="pillar"><i class="fa-solid fa-people-roof"></i><span>Community</span></div>
+        <div class="pillar"><i class="fa-solid fa-globe"></i><span>Impact</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">WHAT'S NEXT</p>
+        <h2>Future Roadmap</h2>
+      </div>
+      <div class="roadmap">
+        <div class="rm-step reveal"><div class="rm-num">01</div><h4>Website Launch</h4><p>Our home base goes live.</p></div>
+        <div class="rm-step reveal"><div class="rm-num">02</div><h4>Community Building</h4><p>Bringing innovators together.</p></div>
+        <div class="rm-step reveal"><div class="rm-num">03</div><h4>Idea Submission Platform</h4><p>A home for every idea.</p></div>
+        <div class="rm-step reveal"><div class="rm-num">04</div><h4>Investor Network</h4><p>Connecting ideas to capital.</p></div>
+        <div class="rm-step reveal"><div class="rm-num">05</div><h4>Funding Opportunities</h4><p>Turning plans into launches.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-tint">
+    <div class="container faq-wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">QUESTIONS</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">What is Ideas Amplified? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>A community that helps Gen Z innovators in Kenya move their ideas from concept to execution.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Who can join? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Any young innovator with an idea, a project, or a business they want to grow.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Is joining free? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Yes. Joining the community and sharing your ideas is completely free.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can students participate? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Absolutely — students are some of our most active innovators.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Do I need a business already? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Not at all. You can join with just an idea — that's exactly where we start.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can investors join? <i class="fa-solid fa-plus"></i></button>
+          <div class="faq-a"><p>Yes, investors are welcome as we grow toward our funding and investor platform.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+        <p class="lead">Have a question or an idea you want to talk through? Send us a message.</p>
+        <div class="social-row">
+          <a href="mailto:Mark1132005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/ideas_amplified254" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@ideas_amplified" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/0792637887" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="cta-final" id="join">
+    <div class="container cta-final-content reveal">
+      <h2>Ready To Turn Your Idea Into Reality?</h2>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Join the Community</a>
+        <a href="#contact" class="btn btn-ghost-light">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo"><img src="images/logo_new-removebg-preview.png" alt="Ideas Amplified"></a>
+      <p>Turning great ideas into real impact — one Gen Z innovator at a time.</p>
+    </div>
+    <div>
+      <h5>Quick Links</h5>
+      <a href="#about">About</a>
+      <a href="#process">Our Process</a>
+      <a href="#sectors">Focus Sectors</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h5>Resources</h5>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+    <div>
+      <h5>Social</h5>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Ideas Amplified. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
